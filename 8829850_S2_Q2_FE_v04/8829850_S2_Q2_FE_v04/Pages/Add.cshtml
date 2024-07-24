@@ -1,0 +1,30 @@
+﻿@page
+@model AddModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="POST">
+
+    <div class="form-group">
+        <label asp-for="car.vehicleName">Vehicle Name: </label>
+        <input asp-for="car.vehicleName"class="form-control"/>
+        <span asp-validation-for="car.vehicleName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="car.vehicleType">Vehicle Type: </label>
+        <input asp-for="car.vehicleType"class="form-control"/>
+        <span asp-validation-for="car.vehicleType" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="car.fuelEfficiency">Fuel Efficiency: </label>
+        <input asp-for="car.fuelEfficiency"class="form-control"/>
+        <span asp-validation-for="car.fuelEfficiency" class="text-danger"></span>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+

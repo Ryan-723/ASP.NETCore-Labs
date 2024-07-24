@@ -1,0 +1,55 @@
+﻿@page
+@model PersonInfoModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post" asp-page-handler="PostPersonInfo">
+
+    <div class="form-group">
+        <label asp-for="person.firstName">First Name: </label>
+        <input asp-for="person.firstName"class="form-control" required/>
+        <span asp-validation-for="person.firstName" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="person.lastName">Last Name: </label>
+        <input asp-for="person.lastName"class="form-control" required/>
+        <span asp-validation-for="person.lastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="person.dateOfBirth">Date of Birth: </label>
+        <input asp-for="person.dateOfBirth"class="form-control" type="date" required/>
+        <span asp-validation-for="person.dateOfBirth" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="person.address">Address: </label>
+        <input asp-for="person.address"class="form-control" required/>
+        <span asp-validation-for="person.address" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="person.city">City: </label>
+        <input asp-for="person.city"class="form-control" required/>
+        <span asp-validation-for="person.city" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="person.country">Country: </label>
+        <input asp-for="person.country"class="form-control" required/>
+        <span asp-validation-for="person.country" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="person.province">Province: </label>
+        <input asp-for="person.province"class="form-control" required/>
+        <span asp-validation-for="person.province" class="text-danger"></span>
+    </div>
+
+    <br>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>

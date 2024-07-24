@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "8829850_S2_Q2_FE_v04/1.0.0": {
+        "runtime": {
+          "8829850_S2_Q2_FE_v04.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "8829850_S2_Q2_FE_v04/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

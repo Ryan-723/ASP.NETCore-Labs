@@ -1,0 +1,29 @@
+@page
+@model PersonAddedModel
+@{
+    ViewData["Title"] = "Person Information";
+}
+
+@if (Model.People.Count > 0)
+{
+    <ul>
+        @foreach (var person in Model.People)
+        {
+            <li>
+                <strong>First Name:</strong> @person.FirstName<br />
+                <strong>Last Name:</strong> @person.LastName<br />
+                <strong>BirthDate:</strong> @person.BirthDate<br />
+                <strong>Address:</strong> @person.Address<br />
+                <strong>City:</strong> @person.City<br />
+                <strong>Country:</strong> @person.Country<br />
+                <strong>Province:</strong> @person.Province<br />
+            </li>
+
+            <br>
+        }
+    </ul>
+}
+else
+{
+    <p>No people found.</p>
+}

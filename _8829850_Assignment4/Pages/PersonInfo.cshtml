@@ -1,0 +1,46 @@
+@page
+@model PersonInfoModel
+@{
+    ViewData["Title"] = "Person Info";
+}
+
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+
+
+<h1>Person Information</h1>
+
+<form method="POST">
+<div>
+    <label asp-for="person.FirstName"></label><br/>
+    <input class="input-label" asp-for="person.FirstName" required/>
+</div>
+<div>
+    <label asp-for="person.LastName" ></label><br/>
+    <input class="input-label" asp-for="person.LastName" required/>
+</div>
+<div>
+    <label asp-for="person.BirthDate" ></label><br/>
+    <input class="input-label" type ="date" asp-for="person.BirthDate" required/>
+</div>
+<div>
+    <label asp-for="person.Address" ></label><br/>
+    <input class="input-label" asp-for="person.Address" required/>
+</div>
+<div>
+    <label asp-for="person.City" ></label><br/>
+    <input class="input-label" asp-for="person.City" required/>
+</div>
+<div>
+    <label asp-for="person.Country" ></label><br/>
+    <input class="input-label" asp-for="person.Country" required/>
+</div>
+<div>
+    <label asp-for="person.Province" ></label><br/>
+    <input class="input-label" asp-for="person.Province" required/>
+</div>
+<br>
+<center><button type="submit" class="save-button">Save</button></center>
+
+</form>
+
+

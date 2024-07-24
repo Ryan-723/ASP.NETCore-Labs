@@ -1,0 +1,13 @@
+﻿@page
+@model ThankYouModel
+@{
+    ViewData["Title"] = "Thank You";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Thank You</h1>
+</div>
+
+<b>Vehicle Name: </b> @Model.car.vehicleName<br>
+<b>Vehicle Type: </b> @Model.car.vehicleType<br>
+<b>Vehicle Fuel Efficiency: </b> @Model.car.fuelEfficiency<br>
